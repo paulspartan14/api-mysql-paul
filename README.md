@@ -1,6 +1,6 @@
 # Express - MYSQL API
 
-Template for developing an API with Express and MYSQL
+API with Express and MYSQL
 
 ## Getting Started :arrow_forward:
 
