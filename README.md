@@ -70,6 +70,10 @@ Made with ❤️ by [Paul Mena](https://github.com/paulspartan14)
 Can you give me a ⭐ or a [coffee ☕](https://www.paypal.com/donate?hosted_button_id=UB7C36H6WY6Q4) 
 
 
-## COMANDOS
+## COMANDOS despues de crear el .env
 
-`npm install`
+```
+npm install
+docker-compose up -d
+npm run dev
+```
