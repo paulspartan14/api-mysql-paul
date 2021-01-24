@@ -1,61 +1,63 @@
-# Name Project
+# Express - MYSQL API
 
-One Paragraph of project description goes here. This is a template for organization repositories, set your own stuff.
+Template for developing an API with Express and MYSQL
 
 ## Getting Started :arrow_forward:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Instrucctions for configuration and deployment this proyect
 
 ### Prerequisites :clipboard:
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+- Install [NodeJS y NPM](https://nodejs.org/es/download/)
+- Install [Docker](https://docs.docker.com/engine/install/) y [Docker-compose](https://docs.docker.com/compose/install/)
 
 ### Installing :arrow_down:
 
-A step by step series of examples that tell you how to get a development env running
+Steps
 
-Say what the step will be
-
+- Install dependencies if you want to execute server:
+```sh
+$ npm i
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+- Configure your environment variables on a .env file like in '.env.example'
 
 ## Deployment :package:
 
-Add additional notes about how to deploy this on a live system
+- Init your database and server with:
+```sh
+$ docker-compose up -d
+```
+
+- To start to adminer interface just navigate to localhost on port 8082
+
+
+- to run proyect in development mode execute:
+```
+$ npm run dev
+```
+
+- Execute the tests with:
+```sh
+$ npm run test
+```
 
 ## Built With :hammer_and_wrench:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [NodeJs](https://nodejs.org/es/)
+  - [Express Framework](https://expressjs.com/es/)
+- [Docker](https://docs.docker.com/)
+- [Docker-compose](https://docs.docker.com/compose/)
+- [MYSQL](https://www.mysql.com/)
 
 ## Contributing :family_man_man_boy:
 
 Please read [CONTRIBUTING.md](https://www.aaaimx.org/cod) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning :triangular_flag_on_post:
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Future work :rocket:
 
 ## Contributors :family_man_man_boy:
 
-- **Paul Mena** - _Initial work_ - [@paulspartan14](https://github.com/paulspartan14)
+- **Paul Mena** - _Initial work_ - [@paulspartan14(https://github.com/paulspartan14)
 
 ## References :link:
 
@@ -64,16 +66,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## License :page_facing_up:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-Made with ❤️ by [Paul Mena](https://github.com/paulspartan14) 
-
-Can you give me a ⭐ or a [coffee ☕](https://www.paypal.com/donate?hosted_button_id=UB7C36H6WY6Q4) 
-
-
-## COMANDOS despues de crear el .env
-
-```
-npm install
-docker-compose up -d
-npm run dev
-```
