@@ -68,3 +68,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Made with ❤️ by [Paul Mena](https://github.com/paulspartan14) 
 
 Can you give me a ⭐ or a [coffee ☕](https://www.paypal.com/donate?hosted_button_id=UB7C36H6WY6Q4) 
+
+
+## COMANDOS
+
+`npm install`

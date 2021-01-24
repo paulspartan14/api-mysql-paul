@@ -1,0 +1,29 @@
+{
+  "name": "api-mysql-paul",
+  "version": "1.0.0",
+  "description": "One Paragraph of project description goes here. This is a template for organization repositories, set your own stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulspartan14/api-mysql-paul.git"
+  },
+  "author": "Paul Mena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulspartan14/api-mysql-paul/issues"
+  },
+  "homepage": "https://github.com/paulspartan14/api-mysql-paul#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
