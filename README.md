@@ -41,6 +41,12 @@ $ npm run dev
 $ npm test
 ```
 
+- Server run on:
+`http://localhost:3300/api/v1/`
+
+- Watch documentation on:
+`http://localhost:3300/api/v1/docs`
+
 ## Built With :hammer_and_wrench:
 
 - [NodeJs](https://nodejs.org/es/)
