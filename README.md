@@ -43,6 +43,8 @@ $ npm test
 
 - Server run on:
 
+`[http://localhost:3300/api/v1/](http://localhost:3300/api/v1/)`
+
 `http://localhost:3300/api/v1/`
 
 - Watch documentation Swagger UI:
