@@ -61,7 +61,7 @@ Please read [CONTRIBUTING.md](https://www.aaaimx.org/cod) for details on our cod
 
 ## References :link:
 
-1. 
+- [API Rest node js mysql(2020)](https://www.youtube.com/watch?v=_Fh13KHVJU0&list=PLTUzJ8zLXj1zabIVKysqm_VjO6-jpyUIz)]
 
 ## License :page_facing_up:
 
