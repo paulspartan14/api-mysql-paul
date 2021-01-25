@@ -15,7 +15,6 @@ const dataModels = {
       let sql = `select * from students where id = ${db_connection.escape(
         data
       )}`
-
       db_connection.query(sql, (err, rows) => {
         if (err) throw err
         callback(rows)
@@ -25,7 +24,6 @@ const dataModels = {
   postStudent: (data, callback) => {
     if (db_connection) {
         let sql = `insert into students (name, lastname) values (${db_connection.escape(data.name)}, ${db_connection.escape(data.lastname)})`
-        
         db_connection.query(sql, (err, rows) => {
             if (err) throw err
             callback({message: 'Student added successfull'})
@@ -35,7 +33,6 @@ const dataModels = {
   deleteStudentById: (data, callback) => {
     if (db_connection){
         let sql = `delete from students where id = ${db_connection.escape(data)}`
-
         db_connection.query(sql, (err, rows) => {
             if (err) throw err
             callback({message: 'Student deleted successfull'})
@@ -45,7 +42,6 @@ const dataModels = {
   putStudentById: (data, callback) => {
     if (db_connection){
         let sql = `update students set name = ${db_connection.escape(data.name)}, lastname = ${db_connection.escape(data.lastname)} where id = ${db_connection.escape(data.id)}`
-
         db_connection.query(sql, (err, rows) => {
             if (err) throw err
             callback({message: 'Student updated successfull'})
