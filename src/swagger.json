@@ -1,0 +1,117 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "CRUD MYSQL Node-Express",
+        "description": "CRUD MYSL Documentation",
+        "version": "1.0"
+    },
+    "produces": ["application/json"],
+    "host": "localhost:3300",
+    "basePath": "/api/v1",
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Home",
+                "tags": ["/"],
+                "parameters": [
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/students": {
+            "get": {
+                "summary": "Returns a list of students",
+                "tags": ["/students"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },            
+            "post": {
+                "summary": "Add a new student",
+                "tags": ["/students"],
+                "description": "Save new student",
+                "parameters": [{
+                        "in": "body",
+                        "required": true,
+                        "name": "body",
+                        "description": "Object that needs to be added",
+                        "schema": {
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "lastname": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "{ message: Added student successfull }"
+                    }
+                }
+            }
+        },
+        "/students/1": {
+            "get": {
+                "summary": "Get student with specific id",
+                "tags": ["/students/:id"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },            
+            "put": {
+                "summary": "Edit a exist student",
+                "tags": ["/students/:id"],
+                "description": "Edit a student",
+                "parameters": [{
+                        "in": "body",
+                        "required": true,
+                        "name": "body",
+                        "description": "Object that needs to be added",
+                        "schema": {
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "lastname": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "{ message: Updated student successfull }"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a exist student",
+                "tags": ["/students/:id"],
+                "description": "Delete a student",
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "{ message: Delete student successfull }"
+                    }
+                }
+            }
+        }
+
+    }
+}
+
