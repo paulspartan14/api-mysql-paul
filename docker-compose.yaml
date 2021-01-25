@@ -1,12 +1,26 @@
-version: '3.0'
+version: '3'
 
 services:
+  api:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: api-mysql:v1.0
+    container_name: node-api
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${PORT}:${PORT}
+    command: npm start
+    depends_on:
+      - db
   db:
     image: mysql:8.0.17
     container_name: mysql_DB
     restart: always
     volumes:
-       - db_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
     environment:
       MYSQL_USER: ${DB_USER}
       MYSQL_ROOT_USER: ${DB_USER}
@@ -19,9 +33,9 @@ services:
   adminer:
     image: adminer
     container_name: adminer
-    depends_on: 
+    depends_on:
       - db
     ports:
       - '8082:8080'
 volumes:
-    db_data:
+  db_data:

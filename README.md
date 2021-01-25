@@ -25,6 +25,7 @@ $ npm i
 
 - Init your database and server with:
 ```sh
+$ docker-compose build 
 $ docker-compose up -d
 ```
 
@@ -40,6 +41,7 @@ $ npm run dev
 ```sh
 $ npm run test
 ```
+
 
 ## Built With :hammer_and_wrench:
 
