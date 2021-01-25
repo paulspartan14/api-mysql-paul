@@ -105,7 +105,7 @@
                 "description": "Delete a student",
                 "parameters": [],
                 "responses": {
-                    "201": {
+                    "200": {
                         "description": "{ message: Delete student successfull }"
                     }
                 }

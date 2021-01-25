@@ -32,8 +32,9 @@ const getStudentById = async (req, res) => {
     const rows = await query(sql)
     // if ID not exist...
     if (rows.length === 0) {
-      res.status(200).json({ message: 'ID not exist' })
+      res.status(404).json({ message: 'ID not exist' })
     } else {
+      // if ID EXIST...
       res.status(200).json(rows)
     }
   } catch (err) {

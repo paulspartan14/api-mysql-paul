@@ -13,12 +13,13 @@ const objectConnection = {
 
 const db_connection = mysql.createConnection(objectConnection)
 
+/*
 db_connection.connect((err) => {
   if (err) {
     console.log(`ha ocurrido un error: ${err}`)
   } else {
     console.log('Database connection successfull')
   }
-})
+})*/
 
 module.exports = db_connection
