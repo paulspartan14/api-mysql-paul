@@ -15,7 +15,7 @@ Instrucctions for configuration and deployment this proyect
 
 Steps
 
-- Install dependencies if you want to execute server on DEV mode:
+- Install dependencies if you want to execute server on DEV-mode:
 ```sh
 $ npm i
 ```
