@@ -39,9 +39,16 @@ $ npm run dev
 
 - Execute the tests with:
 ```sh
-$ npm run test
+$ npm test
 ```
 
+- Server run on:
+
+[localhost:${PORT}/api/v1/](http://localhost:3300/api/v1/)
+
+- Watch documentation Swagger UI:
+
+[localhost:${PORT}/api/v1/docs](http://localhost:3300/api/v1/docs)
 
 ## Built With :hammer_and_wrench:
 
@@ -59,11 +66,11 @@ Please read [CONTRIBUTING.md](https://www.aaaimx.org/cod) for details on our cod
 
 ## Contributors :family_man_man_boy:
 
-- **Paul Mena** - _Initial work_ - [@paulspartan14(https://github.com/paulspartan14)
+- **Paul Mena** - _Initial work_ - [@paulspartan14](https://github.com/paulspartan14)
 
 ## References :link:
 
-- [API Rest node js mysql(2020)](https://www.youtube.com/watch?v=_Fh13KHVJU0&list=PLTUzJ8zLXj1zabIVKysqm_VjO6-jpyUIz)]
+- [API Rest node js mysql(2020)](https://www.youtube.com/watch?v=_Fh13KHVJU0&list=PLTUzJ8zLXj1zabIVKysqm_VjO6-jpyUIz)
 
 ## License :page_facing_up:
 
