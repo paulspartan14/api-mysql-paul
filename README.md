@@ -63,7 +63,7 @@ Please read [CONTRIBUTING.md](https://www.aaaimx.org/cod) for details on our cod
 
 ## Contributors :family_man_man_boy:
 
-- **Paul Mena** - _Initial work_ - [@paulspartan14(https://github.com/paulspartan14)
+- **Paul Mena** - _Initial work_ - [@paulspartan14](https://github.com/paulspartan14)
 
 ## References :link:
 
