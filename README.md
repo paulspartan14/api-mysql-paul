@@ -38,7 +38,7 @@ $ npm run dev
 
 - Execute the tests with:
 ```sh
-$ npm run test
+$ npm test
 ```
 
 ## Built With :hammer_and_wrench:
