@@ -92,7 +92,7 @@ const deleteStudentById = async (req, res) => {
   try{
     let sql = `delete from students where id = ${db_connection.escape(id)}`
     const rows = await query(sql)
-    res.status(200).json({ message: 'Delete student successfull' })
+    res.status(204).json({ message: 'Delete student successfull' })
   }catch(err){
     console.error(`there was an error: ${err}`)
   }
