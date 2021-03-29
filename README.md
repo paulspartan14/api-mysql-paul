@@ -42,6 +42,12 @@ $ npm run dev
 $ npm test
 ```
 
+NOTE:
+if node container not conect to db, restart container
+
+DB dump.sql:
+the info to migrate database test is in folder src/database/data/dump.sql
+
 - Server run on:
 
 [localhost:${PORT}/api/v1/](http://localhost:3300/api/v1/)
