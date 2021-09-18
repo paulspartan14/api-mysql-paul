@@ -6,12 +6,12 @@ services:
     image: api-mysql:v1.0
     container_name: node-api
     restart: unless-stopped
-    volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+    #volumes:
+    #  - .:/usr/src/app
+    #  - /usr/src/app/node_modules
     ports:
       - ${PORT}:${PORT}
-    command: npm run dev
+    command: npm start
     depends_on:
       - db
     env_file:
